@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JEEVITHA - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        header{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; 
+        }
+
+        .header-content h1 {
+          font-size: 2.5rem;
+        }
+
+
+
+.profile-picture {
+    width: 90px; 
+    height: 90px;
+    border-radius: 75%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 75px; 
+    left: 70px; 
+
+}
+nav {
+    background-color: rgb(0, 255, 21);
+    color: black;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none ;
+    padding: 0;
+    
+}
+nav ul li {
+display: inline;
+margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(17, 0, 248);
+}
+
+.section-content {
+    background-color: rgb(241, 234, 200);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.download-button {
+    background-color: rgb(255, 0, 221);
+    color: rgb(2, 0, 0);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.download-button:hover {
+    background-color: darkcyan;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: black;
+    color: rgb(255, 145, 0);
+
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <!--Add your profile photo here--> 
+                <img src="profile.jpg" alt="your profile picture" class="profile-picture">
+                <h1>JEEVITHA</h1>
+                <p>COMPUTER SCIENCE STUDENT </p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>ABOUT ME </h2>
+                <p>HI I AM  JEEVITHA  COMPUTER SCIENCE STUDENT </p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-content">
+                <h2>B.sc</h2>
+                <p>Government arts and science collage. <br>Perunavalur
+                </p>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <ul>
+                    <!--lists-->
+                     <li>C++</li>
+                     <li>Jaava</li>
+                </ul>
+            </div>
+        </section>
+        <section id="project">
+            <div class="section-content">
+                <h2>Project</h2>
+                <ul>
+                    <li><a href="file:///C:/Users/suku/Documents/become%20cs%20student/first_page.html"
+                         target="file:///C:/Users/suku/Documents/become%20cs%20student/first_page.html">
+                         Project 1</a></li>
+                </ul>
+            </div>
+        </section>
+        
+            <section id="resume">
+            <center>
+            <div class="section-content"> 
+                
+                <h2>Resume</h2><br>
+                <a href="resume jeevitha.rtf" class="download-button"><b>Download certificate</b></a>
+            </div>
+            </center>
+            
+
+            <footer>
+                <p>&COPY; 2023 JEEVITHA </p>
+            </footer>
+        </section>
+        <script>
+            document.querySelectorAll(a[href^="#"]).forEach(anchor =>{
+                anchor.addeventlistener('click', function(e){
+                    e.preventdefault();
+
+                    consttargetid =this.getAttribute('href').substring(1);
+                    const targetelement =document.getelementByID(targetId
+                    
+                    if (targetElement) {
+                        window.scrollto({
+                            top:targetElement.offsetTop,
+                            behavior: 'smooth'
+                        })
+                    }
+                    )
+                })
+            }) 
+        </script>
+
+
+    </body>
+
